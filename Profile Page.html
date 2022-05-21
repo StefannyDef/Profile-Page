@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<!-- saved from url=(0039)http://127.0.0.1:5500/profilepage.html# -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Page</title>
+    <link rel="stylesheet" href="./Profile Page_files/profilepage.css">
+</head>
+<body>
+    <div class="navbar">
+        <h1>Profile</h1>
+            <div class="divleft">
+                <ul>
+                    <li>home</li>
+                    <li><strong>my profile</strong></li>
+                    <li>find connections</li>
+                </ul>
+            </div>
+            <div class="divrigth"><p class="BB">Sign Out</p></div>
+        </div>
+        <div class="navrigth"></div>
+    <div class="container">
+        <div class="leftbox">
+            <div class="carduser">
+                <div class="top">
+                    <img src="./Profile Page_files/saymyname.jpeg" alt="sayit" class="profilepic">
+                    <h2>Walter White</h2>
+                    <h3><img src="./Profile Page_files/map-marker.png" alt="terceirafoto" class="WW">Albuquerque, New Mexico</h3>
+                    <p>Cook | Survivor | Father</p>
+                        <p><strong>The one who knocks</strong></p>
+                    <a href="http://127.0.0.1:5500/profilepage.html#"><img src="./Profile Page_files/gear.png" alt="gear" class="segunda">edit profile</a>
+                </div>
+            </div>
+            <div class="embaixo">
+                <div class="faixa">
+                    <p>Education</p>
+                </div>
+            </div></div>
+        <div class="rigthbox">
+            <div class="boxtop2">
+                <div class="top3">
+                    <p>Connection Requests </p>
+                
+                </div>
+                <div class="list">
+                <img src="./Profile Page_files/toddBB.webp" class="ligia"><p><strong>Todd Alquist</strong></p><img src="./Profile Page_files/accept-circle.png" class="skyler"><img src="./Profile Page_files/close-circle.png" class="skyler">
+                </div>
+                <div class="list">
+                    <img src="./Profile Page_files/GaleBB.webp" class="ligia"><p><strong>Gael Boetticher</strong>
+                    </p><img src="./Profile Page_files/accept-circle.png" class="skyler"><img src="./Profile Page_files/close-circle.png" class="skyler">
+                    </div>
+            </div>
+                <div class="embaixo2">
+                    <div class="embaixo3">
+                        <p>Your connections</p>
+                    </div>
+                    <div class="list2">
+                        <img src="./Profile Page_files/hank.jpeg" class="ligia"><p><strong>Hank Schrader</strong></p>
+                    </div>
+                    <div class="list2">
+                        <img src="./Profile Page_files/jessie.jpeg" class="ligia"><p><strong>Jessie Pinkman</strong></p>
+                    </div>
+                    <div class="list2">
+                    <img src="./Profile Page_files/marie.jpeg" class="ligia"><p><strong>Marie Schrader</strong></p>
+                    </div>
+                    <div class="list2">
+                        <img src="./Profile Page_files/skyinny.jpeg" class="ligia"><p><strong>Skinny Pete</strong></p>
+
+                    </div>
+                    <div class="lastcontainer">  <a href="http://127.0.0.1:5500/profilepage.html#"><lastclass>view more</lastclass></a></div>
+                </div>
+            </div>
+        </div>
+<!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>
